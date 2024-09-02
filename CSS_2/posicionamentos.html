@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html >
+    <head>
+        <title>Posicionamento (static, relative, absolute e fixed)</title>
+        <meta charset="utf-8">
+
+        <style type="text/css">
+
+            body{
+                background: #007fc7 ;
+            }
+
+
+            #container{
+                background: #fff;
+                width: 800px;
+                margin: 10px auto;   /* AUTO, Mardem automatica */
+                padding: 10px;
+                position: relative;   /* Se tirar isso, o 'absolute' vai alainhar de acordo com o body */
+            }
+
+
+            p{
+                width: 400px;
+            }
+
+            .fixed{      /* FIXED, fica fixo em relação a janela do navegador */
+                border: 1px solid red;
+                background: #f2f2f2;
+                margin:0px;
+                position: fixed;
+                bottom: 0px;
+                right:0px;
+            }
+
+
+            .absolute{      /* Sai do fluxo normal, e fica fixo */
+                border: 1px solid red;
+                background: #f2f2f2;
+                position: absolute;
+                right: 80px;
+                top: 80px;
+            }
+
+
+            .relative{
+                border: 1px solid red;
+                position: relative;    /* POSITION, muda a posição das coisas,top bottom right left, escreve embaixo */
+                bottom: 20px;
+                left: 80px;
+                
+            }
+
+
+
+
+        </style>
+
+    </head>
+    <body> 
+
+        <div id="container">
+            
+            <h1>Posicionamentos</h1>
+            <p>
+                P1 Lorem Ipsum has been the industry's standard dummy
+                text ever since the 1500s, when an unknown printer
+                took a galley of type and scrambled
+            </p>
+
+            <p class="fixed">
+                P2 Lorem Ipsum has been the industry's standard dummy
+                text ever since the 1500s, when an unknown printer
+                took a galley of type and scrambled
+            </p>
+
+            <p>
+                P3 Lorem Ipsum has been the industry's standard dummy
+                text ever since the 1500s, when an unknown printer
+                took a galley of type and scrambled
+            </p>
+
+
+        </div>
+       
+
+    </body>
+</html
